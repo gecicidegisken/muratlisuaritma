@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rajdhani:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;500;600&display=swap");
+body {
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #4286f4,
+    #373b44
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4286f4, #373b44);
+  /* background-image: url("bg.png");
+  background-size: cover; */
+}
+* {
+  font-family: "Urbanist", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.site-title {
+  color: white;
+
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.site-title img {
+  width: 150%;
+  margin-left: -50px;
+  margin-bottom: 2px;
+}
+.site-title h1 {
+  margin-top: 2px;
+  font-size: 50px;
+  margin-bottom: 2px;
+}
+.site-subtitle {
+  text-align: center;
+  font-size: 25px;
+  align-self: center;
+  justify-self: center;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 4px;
+}
+.contact-info {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+  line-height: 2rem;
+  font-weight: 600;
+}
+.contact-info p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 25px;
+}
+.contact-info a {
+  text-decoration: underline;
+  margin-bottom: 5px;
+  text-decoration-color: rgb(154, 155, 153);
+}
+.address,
+.address p {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.address address {
+  margin-right: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.address iframe {
+  width: 90%;
+}
+.menu {
+  text-align: center;
+  font-size: 25px;
+}
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 0;
+  padding-left: 0;
+}
+.menu li {
+  text-decoration: none;
+  margin-right: 5px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.menu a {
+  color: white;
+}
+.menu a:hover {
+  text-decoration: underline white;
+}
+img {
+  z-index: -2;
+  width: 75%;
+  align-self: center;
+  justify-self: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+
+  padding: 8px;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  font-size: 20px;
+}
+.modal h2 {
+  text-align: center;
+}
+.modal .contact-info a,
+.modal .contact-info {
+  color: black;
+  font-size: 25px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.products {
+  text-align: center;
+  color: white;
+}
+.products h1 {
+  font-size: 50px;
+}
+
+.grid img {
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border: rgb(43, 43, 43) solid;
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    width: 50%;
+  }
+  .site-title img {
+    width: 50%;
+    margin-left: -50px;
+    margin-bottom: 2px;
+  }
+  .address iframe {
+    width: 50%;
+  }
+  .site-title h1 {
+    font-size: 80px;
+  }
+  .site-subtitle {
+    font-size: 50px;
+  }
+  .contact-info {
+    font-size: 45px;
+    line-height: 3rem;
+  }
+  .address address {
+    font-size: 30px;
+  }
+  .menu {
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .grid img {
+    width: 25%;
+    margin: 5px;
+    border: rgb(43, 43, 43) solid;
+  }
+}
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
